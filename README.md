@@ -1,5 +1,5 @@
 # DiffPack: A Torsional Diffusion Model for Autoregressive Protein Side-Chain Packing
-**DiffPack** is a novel torsional diffusion model designed for predicting the conformation of protein side-chains based on their backbones, as introduced in [arxiv link](https://arxiv.org/abs/2306.01794). By learning the joint distribution of side-chain torsional angles through a process of diffusing and denoising on the torsional space, DiffPack significantly improves angle accuracy across various benchmarks for protein side-chain packing. 
+**DiffPack** is a novel torsional diffusion model designed for predicting the conformation of protein side-chains based on their backbones. By learning the joint distribution of side-chain torsional angles through a process of diffusing and denoising on the torsional space, DiffPack significantly improves angle accuracy across various benchmarks for protein side-chain packing. 
 
 
 ## Installation
@@ -25,10 +25,10 @@ pip install easydict
 ## Model Checkpoints
 We provide several versions of DiffPack, each with its own configuration and checkpoint:
 
-| Model                                 | Config                                     | Checkpoint            |
-|---------------------------------------|--------------------------------------------|-----------------------|
-| DiffPack (Vanila)                     | [Config](config/inference.yaml)            | [Google Drive Link](https://drive.google.com/file/d/1tZ9ZOjIxq9SxrkdvbLJyLUBbt2P-mksO/view?usp=sharing) |
- | DiffPack (with Confidence Prediction) | [Config](config/inference_confidence.yaml) | [Google Drive Link](https://drive.google.com/file/d/1tZ9ZOjIxq9SxrkdvbLJyLUBbt2P-mksO/view?usp=sharing) |
+| Model                                 | Config                                     |
+|---------------------------------------|--------------------------------------------|
+| DiffPack (Vanila)                     | [Config](config/inference.yaml)            |
+ | DiffPack (with Confidence Prediction) | [Config](config/inference_confidence.yaml) |
 
 The Vanilla version of DiffPack is the base model, 
 while the version with Confidence Prediction includes an additional feature that estimates the confidence score of the predicted side-chain conformation.
@@ -57,16 +57,5 @@ Stay tuned for updates!
 ## Visualization of Results
 ![Visualization](asset/result.png)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-## Citation
-If you find DiffPack useful in your research or project, please cite our paper:
-```
-@article{zhang2023diffpack,
-  title={DiffPack: A Torsional Diffusion Model for Autoregressive Protein Side-Chain Packing},
-  author={Zhang, Yangtian and Zhang, Zuobai and Zhong, Bozitao and Misra, Sanchit and Tang, Jian},
-  journal={arXiv preprint arXiv:2306.01794},
-  year={2023}
-}
-```
+
 
